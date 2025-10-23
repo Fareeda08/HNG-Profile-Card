@@ -1,0 +1,162 @@
+article {
+  width: 52dvw;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.user-name {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.user-name + p {
+  margin-top: 0;
+  word-wrap: break-word;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+  border-start-start-radius: 7px;
+  border-end-start-radius: 7px;
+}
+.hobdis {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-media img {
+  margin: 0rem 0.7rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 75px;
+}
+
+#ig {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+}
+
+figure {
+  margin-right: 1rem;
+  height: 100%;
+  width: 50%;
+  margin-left: -1rem;
+}
+
+ul {
+  margin-top: 0;
+  text-align: left;
+}
+
+ul h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.time {
+  font-weight: bold;
+}
+
+.current-time {
+  font-weight: normal;
+}
+
+/* STAGE 01 */
+.user-info {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+}
+
+.user-info button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 7px;
+  outline: none;
+  border: 2px solid rgb(155, 99, 25);
+ background-color: rgba(184, 109, 43, 0.895);
+  color: rgb(247, 211, 165);
+  font-weight: bold;
+}
+
+.user-info button:hover,
+.user-info button:active,
+.user-info button:visited {
+   background-color: rgb(247, 211, 165);
+   color: rgba(184, 109, 43, 0.895);
+}
+
+@media (max-width: 85rem) {
+  article {
+    width: 50dvw;
+    height: 90%;
+    padding: 0;
+    flex-direction: column;
+    border: 0;
+  }
+
+  body {
+    margin: 0;
+    height: fit-content;
+  }
+
+  figure {
+    margin: 0;
+    height: 45%;
+    width: 100%;
+  }
+
+  figure img {
+    border-start-start-radius: 0px;
+    border-end-start-radius: 0px;
+  }
+
+  .info {
+    margin-top: 2rem;
+    width: 80%;
+  }
+
+  .user-name {
+    margin-bottom: 5px;
+  }
+
+  .hobdis {
+    justify-content: space-around;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+
+  .social-media img {
+    margin: 0rem 0.7rem;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 48rem) {
+  article {
+    width: 100dvw;
+    height: 100%;
+    padding: 0;
+    border: 0;
+  }
+
+  .user-info {
+    width: 100%;
+  }
+}
