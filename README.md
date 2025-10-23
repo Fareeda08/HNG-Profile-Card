@@ -13,3 +13,10 @@ Use keyboard navigation to test focusability.
 
 //Testing
 Each visible element includes a unique data-testid for automated tests.
+
+//Contact and About page
+-Email validation using regex
+-Message validation
+-Semantic html
+-data-testid's
+-success and error messages

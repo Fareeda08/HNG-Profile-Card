@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/shared.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+  </head>
+  <body>
+   
+    <main class="contact-main">
+      <h2>Contact Me</h2>
+
+      <form>
+        <label for="fname">Full Name:</label>
+        <input
+          data-testid="test-contact-name"
+          type="text"
+          name="fname"
+          id="fname"
+          required
+        />
+        <br />
+
+        <input
+          data-testid="test-contact-subject"
+          type="text"
+          name="subject"
+          id="subject"
+          placeholder="Subject..."
+        /><br />
+
+        <label for="mail">Email:</label>
+        <input
+          data-testid="test-contact-email"
+          type="email"
+          name="usermail"
+          id="mail"
+          aria-describedby="email-error" 
+          class="email"
+          required
+        /><br />
+
+        <label for="message">Message:</label>
+        <textarea
+          data-testid="test-contact-message"
+          name="message"
+          aria-describedby="message-error" 
+          id="message"
+        ></textarea
+        ><br />
+
+        <input data-testid="test-contact-submit" class="submit" type="submit" value="Submit" />
+      </form>
+    </main>
+
+    <div class="error-message hidden">
+      <p id="error">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> ERROR
+      </p>
+      <p>There seems to be an error with the information inputed.</p>
+      <button class="modal-btn" type="button">BACK</button>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <div data-testid="test-contact-success" class="success-message hidden">
+      <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+      <p>
+        Thank you <span class="user-name"></span> for contacting me. I'll review
+        your message and respond as soon as possible.
+      </p>
+      <a href="../pages/index.html"> <button class="modal-btn" type="button">HOME</button></a>
+     
+    </div>
+
+    <script src="../contact.js"></script>
+  </body>
+</html>

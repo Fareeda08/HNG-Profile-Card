@@ -1,3 +1,7 @@
-const currentTimeElement = document.querySelector('.current-time');
-const currentTime = Date.now();
-currentTimeElement.textContent = currentTime
+const currentTimeElement = document.querySelector(".current-time");
+let currentTime = Date.now();
+
+setInterval(() => {
+  currentTime--;
+  currentTimeElement.textContent = currentTime;
+}, 1000);
